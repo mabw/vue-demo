@@ -1,7 +1,13 @@
 <template>
   <div class="hello">
     <div>The value is {{ value === "" ? "none" : value }}</div>
-    <resource :value="value" @update-value="updateValue"></resource>
+    <div>The value is {{ value2 === "" ? "none" : value2 }}</div>
+    <resource
+      :value="value"
+      :value2="value2"
+      @update-value="updateValue"
+      @update-value2="updateValue2"
+    ></resource>
   </div>
 </template>
 
@@ -14,11 +20,15 @@ export default {
   data() {
     return {
       value: "",
+      value2: "",
     };
   },
   methods: {
     updateValue(value) {
       this.value = value;
+    },
+    updateValue2(value) {
+      this.value2 = value;
     },
   },
 };
