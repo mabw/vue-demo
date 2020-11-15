@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// 还需要支持多个面板,多个按钮的存在
 import TogglePanelWrapper from "../TogglePanelWrapper";
 import ResourceDummy from "./ResourceDummy";
 import ResourcePanel from "./ResourcePanel";

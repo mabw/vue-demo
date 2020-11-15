@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <div>the value is {{ value === "" ? "none" : value }}</div>
+    <div>The value is {{ value === "" ? "none" : value }}</div>
     <resource :value="value" @update-value="updateValue"></resource>
   </div>
 </template>

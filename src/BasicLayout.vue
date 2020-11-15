@@ -8,7 +8,7 @@
         </router-link>
         &nbsp;&nbsp;&nbsp;&nbsp;
         <router-link to="/demo">
-          <a>blank page</a>
+          <a>Blank page</a>
         </router-link>
       </div>
     </div>
