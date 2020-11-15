@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
     <div>the value is {{ value === "" ? "none" : value }}</div>
     <resource :value="value" @update-value="updateValue"></resource>
   </div>
@@ -11,10 +10,7 @@ import Resource from "./Resource/";
 
 export default {
   components: { Resource },
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
+  name: "Home",
   data() {
     return {
       value: "",

@@ -3,7 +3,6 @@
     <div @click="togglePanelVisiable">
       <slot name="dummyComponent"></slot>
     </div>
-    <hr />
     <div v-if="isShowPanel">
       <slot name="componentPanel"></slot>
     </div>
@@ -24,5 +23,3 @@ export default {
   },
 };
 </script>
-
-<style></style>
