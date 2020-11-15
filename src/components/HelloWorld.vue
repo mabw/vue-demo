@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Resource from "./Resource/index";
+import Resource from "./Resource/";
 
 export default {
   components: { Resource },
