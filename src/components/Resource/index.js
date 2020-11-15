@@ -1,1 +1,3 @@
-export * from "./ResourceWrapper.vue";
+import Resource from "./ResourceWrapper.vue";
+
+export default Resource;
