@@ -1,5 +1,5 @@
 <template>
-  <toggle-panel-wrapper>
+  <toggle-panel-wrapper :value="slotValue">
     <template slot="dummyComponent">
       <resource-dummy :value="value"></resource-dummy>
     </template>
@@ -20,6 +20,11 @@ export default {
     TogglePanelWrapper,
     ResourceDummy,
     ResourcePanel,
+  },
+  data() {
+    return {
+      slotValue: "slotaaaa",
+    };
   },
   methods: {
     handlePropsEvent(val) {

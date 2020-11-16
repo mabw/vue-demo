@@ -9,6 +9,7 @@ export default {
   props: ["value"],
   mounted() {
     console.log("dummy mounted");
+    console.log("aprent", this.$parent);
   },
   beforeDestroy() {
     console.log("dummy destroyed");
