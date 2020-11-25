@@ -11,11 +11,35 @@
           <a>Blank page</a>
         </router-link>
       </div>
+      <button @click="removeKey">remove</button>
+      <button @click="reset">reset</button>
     </div>
     <transition>
       <keep-alive>
-        <router-view></router-view>
+        <router-view :nameKey="name" @saveKey="saveKey"></router-view>
       </keep-alive>
     </transition>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      name: "a",
+      componentKey: "",
+    };
+  },
+  methods: {
+    removeKey() {
+      this.name = "";
+    },
+    reset() {
+      this.name = Math.random(0, 100) + "";
+    },
+    saveKey(val) {
+      this.componentKey = val;
+    },
+  },
+};
+</script>
